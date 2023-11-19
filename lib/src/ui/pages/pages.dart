@@ -1,0 +1,11 @@
+export 'almacenamiento/almacenamiento_page.dart';
+export 'change_pass/change_pass_page.dart';
+export 'colector/page/colector_page.dart';
+export 'colector_general/page/colector_general_page.dart';
+export 'colector_listero/page/foot_collectors_page.dart';
+export 'home/home_page.dart';
+export 'limitar_bola/page/programed_limits_page.dart';
+export 'regla/reglas_page.dart';
+export 'reporte/reporte_page.dart';
+export 'resumen/resumen_page.dart';
+export 'tirada/tirada_page.dart';

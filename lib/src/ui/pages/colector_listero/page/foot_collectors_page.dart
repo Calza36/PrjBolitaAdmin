@@ -5,13 +5,12 @@ import '../widget/list_foot_collectors_widget.dart';
 
 class FootCollectorsPage extends StatefulWidget {
   const FootCollectorsPage(
-      {Key? key,
+      {super.key,
       required this.collectorId,
       required this.turn,
       required this.day,
       required this.month,
-      required this.year})
-      : super(key: key);
+      required this.year});
   final String collectorId;
   final String turn;
   final int day;

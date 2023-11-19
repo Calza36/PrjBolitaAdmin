@@ -13,8 +13,8 @@ import 'limitarP_page.dart';
 
 class CurrentLimitsViewWidget extends StatefulWidget {
   const CurrentLimitsViewWidget({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   State<CurrentLimitsViewWidget> createState() =>
@@ -857,8 +857,8 @@ class _CurrentLimitsViewWidgetState extends State<CurrentLimitsViewWidget> {
                     elevation: 10.0,
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20.0)),
-                    child: Column(
-                      children: const <Widget>[
+                    child: const Column(
+                      children: <Widget>[
                         SizedBox(height: 5),
                         Text(
                           "Fijos y Corridos limitados",
@@ -911,8 +911,8 @@ class _CurrentLimitsViewWidgetState extends State<CurrentLimitsViewWidget> {
                   elevation: 10.0,
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20.0)),
-                  child: Column(
-                    children: const <Widget>[
+                  child: const Column(
+                    children: <Widget>[
                       SizedBox(height: 5),
                       Text(
                         "Parle limitados",

@@ -89,9 +89,9 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
                         child: Column(
                           children: [
                             const SizedBox(height: 15.0),
-                            Row(
+                            const Row(
                               mainAxisAlignment: MainAxisAlignment.center,
-                              children: const [
+                              children: [
                                 Text(
                                   "Jugadores",
                                   style: TextStyle(
@@ -162,9 +162,9 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
                         child: Column(
                           children: [
                             const SizedBox(height: 15.0),
-                            Row(
+                            const Row(
                               mainAxisAlignment: MainAxisAlignment.center,
-                              children: const [
+                              children: [
                                 Text(
                                   "Administrar",
                                   style: TextStyle(
@@ -209,12 +209,12 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
                         elevation: 10.0,
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(20.0)),
-                        child: Column(
+                        child: const Column(
                           children: [
-                            const SizedBox(height: 15.0),
+                            SizedBox(height: 15.0),
                             Row(
                               mainAxisAlignment: MainAxisAlignment.center,
-                              children: const [
+                              children: [
                                 Text(
                                   "Usuario",
                                   style: TextStyle(
@@ -224,7 +224,7 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
                                 ),
                               ],
                             ),
-                            const HomeOptionsListTile(
+                            HomeOptionsListTile(
                               page: AppPages.changePass,
                             ),
                           ],
@@ -302,9 +302,9 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
 
 class HomeOptionsListTile extends StatelessWidget {
   const HomeOptionsListTile({
-    Key? key,
+    super.key,
     required this.page,
-  }) : super(key: key);
+  });
 
   final AppPages page;
 
@@ -334,9 +334,9 @@ class HomeOptionsListTile extends StatelessWidget {
 
 class HomeOptionsListTileRule extends StatelessWidget {
   const HomeOptionsListTileRule({
-    Key? key,
+    super.key,
     required this.page,
-  }) : super(key: key);
+  });
 
   final AppPages page;
 

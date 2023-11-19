@@ -5,7 +5,7 @@ import '../../pages.dart';
 import '../widget/form_edit_limites_widget.dart';
 
 class EditLimites extends StatelessWidget {
-  EditLimites({Key? key, required this.limitatedEntity}) : super(key: key);
+  const EditLimites({super.key, required this.limitatedEntity});
   final LimitatedEntity limitatedEntity;
   @override
   Widget build(BuildContext context) {

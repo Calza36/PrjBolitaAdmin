@@ -3,7 +3,6 @@
 //     final childrensDto = childrensDtoFromJson(jsonString);
 
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:hive/hive.dart';
 import 'dart:convert';
 
 part 'childrens_dto.freezed.dart';

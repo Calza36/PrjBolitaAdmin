@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../widget/next_limits_view_widget.dart';
 
 class NextLimits extends StatefulWidget {
-  const NextLimits({Key? key}) : super(key: key);
+  const NextLimits({super.key});
 
   @override
   State<NextLimits> createState() => _NextLimitsState();

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ReglasEditWidget extends StatefulWidget {
-  const ReglasEditWidget({Key? key}) : super(key: key);
+  const ReglasEditWidget({super.key});
 
   @override
   State<ReglasEditWidget> createState() => _ReglasEditWidgetState();
@@ -10,15 +10,15 @@ class ReglasEditWidget extends StatefulWidget {
 class _ReglasEditWidgetState extends State<ReglasEditWidget> {
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(8.0),
+    return const Padding(
+      padding: EdgeInsets.all(8.0),
       child: Column(
         children: [
           SizedBox(
             width: double.infinity,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.start,
-              children: const [
+              children: [
                 Text(
                   "Fijo:",
                   style: TextStyle(
@@ -45,7 +45,7 @@ class _ReglasEditWidgetState extends State<ReglasEditWidget> {
             width: double.infinity,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.start,
-              children: const [
+              children: [
                 Text(
                   "Corrido:",
                   style: TextStyle(
@@ -72,7 +72,7 @@ class _ReglasEditWidgetState extends State<ReglasEditWidget> {
             width: double.infinity,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.start,
-              children: const [
+              children: [
                 Text(
                   "Parle:",
                   style: TextStyle(
@@ -99,7 +99,7 @@ class _ReglasEditWidgetState extends State<ReglasEditWidget> {
             width: double.infinity,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.start,
-              children: const [
+              children: [
                 Text(
                   "Limitar Fijo:",
                   style: TextStyle(
@@ -126,7 +126,7 @@ class _ReglasEditWidgetState extends State<ReglasEditWidget> {
             width: double.infinity,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.start,
-              children: const [
+              children: [
                 Text(
                   "Limitar Corrido:",
                   style: TextStyle(
@@ -153,7 +153,7 @@ class _ReglasEditWidgetState extends State<ReglasEditWidget> {
             width: double.infinity,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.start,
-              children: const [
+              children: [
                 Text(
                   "Limitar Parle:",
                   style: TextStyle(
@@ -180,7 +180,7 @@ class _ReglasEditWidgetState extends State<ReglasEditWidget> {
             width: double.infinity,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.start,
-              children: const [
+              children: [
                 Text(
                   "Limitar Centena:",
                   style: TextStyle(

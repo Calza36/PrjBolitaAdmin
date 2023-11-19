@@ -22,9 +22,9 @@ class MyApp extends StatefulWidget {
   final SharedPreferences sharedPreferences;
 
   const MyApp({
-    Key? key,
+    super.key,
     required this.sharedPreferences,
-  }) : super(key: key);
+  });
 
   @override
   MyAppState createState() => MyAppState();

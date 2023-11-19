@@ -4,8 +4,7 @@ import '../../tools/app_config_size.dart';
 
 class PlaneLoading extends StatefulWidget {
   const PlaneLoading(
-      {Key? key, required this.marginLeft, required this.marginRight})
-      : super(key: key);
+      {super.key, required this.marginLeft, required this.marginRight});
   final double marginLeft;
   final double marginRight;
   @override

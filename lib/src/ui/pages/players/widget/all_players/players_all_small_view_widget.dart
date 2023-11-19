@@ -12,7 +12,7 @@ import '../../index.dart';
 import '../../page/edit_player/edit_player_page.dart';
 
 class PlayerAllSmallView extends StatefulWidget {
-  const PlayerAllSmallView({Key? key, required this.player}) : super(key: key);
+  const PlayerAllSmallView({super.key, required this.player});
   final PlayerAbstractEntity player;
 
   @override

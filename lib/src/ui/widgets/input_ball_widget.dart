@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class InputBallWidget extends StatefulWidget {
   final bool selec;
   final String number;
-  const InputBallWidget({Key? key, required this.number, required this.selec}) : super(key: key);
+  const InputBallWidget({super.key, required this.number, required this.selec});
 
   @override
   State<InputBallWidget> createState() => _InputBallWidgetState();

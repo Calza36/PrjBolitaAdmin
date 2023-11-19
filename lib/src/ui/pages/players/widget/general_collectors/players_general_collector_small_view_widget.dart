@@ -13,8 +13,7 @@ import '../../index.dart';
 import '../../page/edit_player/edit_player_page.dart';
 
 class PlayerGeneralCollectorSmallView extends StatefulWidget {
-  const PlayerGeneralCollectorSmallView({Key? key, required this.player})
-      : super(key: key);
+  const PlayerGeneralCollectorSmallView({super.key, required this.player});
   final PlayerGeneralCollectorEntity player;
 
   @override

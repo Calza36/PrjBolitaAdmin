@@ -16,10 +16,10 @@ import '../players/page/edit_player/cubits/get_rules_cubit.dart';
 
 class ReglasView extends StatefulWidget {
   const ReglasView({
-    Key? key,
+    super.key,
     required this.ruleName,
     this.ruleElement,
-  }) : super(key: key);
+  });
   final String ruleName;
   final RuleElement? ruleElement;
 
@@ -546,7 +546,7 @@ class _ReglasViewState extends State<ReglasView> {
               "Se está guardando...",
               style: TextStyle(fontWeight: FontWeight.w500),
             ),
-            actions: <Widget>[],
+            actions: const <Widget>[],
           );
         });
   }
@@ -645,10 +645,10 @@ class _ReglasViewState extends State<ReglasView> {
       child: Column(
         children: [
           Padding(
-            padding: EdgeInsets.all(10),
+            padding: const EdgeInsets.all(10),
             child: Column(children: [
-              Row(
-                children: const <Widget>[
+              const Row(
+                children: <Widget>[
                   Text(
                     "Seleccionar fecha y jornada",
                     style: TextStyle(
@@ -699,8 +699,8 @@ class _ReglasViewState extends State<ReglasView> {
             ]),
           ),
           const SizedBox(height: 10),
-          Row(
-            children: const [
+          const Row(
+            children: [
               SizedBox(
                 width: 10,
               ),
@@ -755,8 +755,8 @@ class _ReglasViewState extends State<ReglasView> {
             ],
           ),
           const SizedBox(height: 20),
-          Row(
-            children: const [
+          const Row(
+            children: [
               SizedBox(
                 width: 10,
               ),
@@ -826,9 +826,9 @@ class _ReglasViewState extends State<ReglasView> {
           Padding(
             padding: const EdgeInsets.all(10),
             child: Column(children: [
-              Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: const <Widget>[
+                children: <Widget>[
                   Text(
                     "Detalles:",
                     style: TextStyle(
@@ -883,8 +883,8 @@ class _ReglasViewState extends State<ReglasView> {
                 height: 30,
                 color: Colors.black26,
               ),
-              Row(
-                children: const [
+              const Row(
+                children: [
                   SizedBox(
                     width: 2,
                   ),
@@ -1051,8 +1051,8 @@ class _ReglasViewState extends State<ReglasView> {
                 height: 30,
                 color: Colors.black26,
               ),
-              Row(
-                children: const [
+              const Row(
+                children: [
                   SizedBox(
                     width: 2,
                   ),
@@ -1182,8 +1182,8 @@ class _ReglasViewState extends State<ReglasView> {
                 height: 30,
                 color: Colors.black26,
               ),
-              Row(
-                children: const [
+              const Row(
+                children: [
                   SizedBox(
                     width: 2,
                   ),
@@ -1350,8 +1350,8 @@ class _ReglasViewState extends State<ReglasView> {
                 height: 30,
                 color: Colors.black26,
               ),
-              Row(
-                children: const [
+              const Row(
+                children: [
                   SizedBox(
                     width: 2,
                   ),
@@ -1557,15 +1557,15 @@ class _ReglasViewState extends State<ReglasView> {
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
       child: Column(
         children: [
-          Padding(
+          const Padding(
             padding: EdgeInsets.all(10),
-            child: Column(children: const [
+            child: Column(children: [
               SizedBox(height: 4),
             ]),
           ),
-          Row(
+          const Row(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: const [
+            children: [
               Text(
                 "Vista previa:",
                 style: TextStyle(

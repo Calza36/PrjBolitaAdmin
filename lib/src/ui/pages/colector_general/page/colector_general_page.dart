@@ -5,13 +5,12 @@ import '../widget/list_colector_general_widget.dart';
 
 class ColectorGeneral extends StatefulWidget {
   const ColectorGeneral(
-      {Key? key,
+      {super.key,
       required this.adminId,
       required this.turn,
       required this.day,
       required this.month,
-      required this.year})
-      : super(key: key);
+      required this.year});
   final String adminId;
   final String turn;
   final int day;

@@ -7,7 +7,7 @@ import '../../../../../infrastructure/player_general_collector/datasources/imple
 import '../../../../widgets/plane_loading_widget.dart';
 
 class ListPlayersGeneralCollectors extends StatefulWidget {
-  const ListPlayersGeneralCollectors({Key? key}) : super(key: key);
+  const ListPlayersGeneralCollectors({super.key});
 
   @override
   State<ListPlayersGeneralCollectors> createState() =>

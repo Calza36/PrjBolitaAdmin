@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 
 import '../../index.dart';
 import '../base/node_rule_repository_base.dart';

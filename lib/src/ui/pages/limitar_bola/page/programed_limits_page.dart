@@ -4,7 +4,7 @@ import '../widget/list_bolas_limitadas_widget.dart';
 import 'add_limites_page.dart';
 
 class ProgramedLimits extends StatefulWidget {
-  const ProgramedLimits({Key? key}) : super(key: key);
+  const ProgramedLimits({super.key});
 
   @override
   State<ProgramedLimits> createState() => _ProgramedLimitsState();

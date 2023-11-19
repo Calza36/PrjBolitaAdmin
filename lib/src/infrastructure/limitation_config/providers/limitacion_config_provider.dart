@@ -240,7 +240,7 @@ class LimitationConfigProvider {
     }
   }
 
-  /*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***/
+  /// * *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** **
 
   Future<Map<String, dynamic>> updateNextNightLimited(
       LimitsEntity newCurrentLimitedEntity) async {

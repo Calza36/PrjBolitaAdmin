@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ListColectoresWidget extends StatefulWidget {
-  const ListColectoresWidget({Key? key}) : super(key: key);
+  const ListColectoresWidget({super.key});
 
   @override
   State<ListColectoresWidget> createState() => _ListColectoresWidgetState();
@@ -95,17 +95,17 @@ class _ListColectoresWidgetState extends State<ListColectoresWidget> {
                   const DataCell(
                     FittedBox(child: Text("180.00")),
                   ),
-                  DataCell(
+                  const DataCell(
                     FittedBox(child: Text("-")),
                   ),
-                  DataCell(
+                  const DataCell(
                     FittedBox(child: Text("-")),
                   ),
-                  DataCell(
+                  const DataCell(
                     FittedBox(child: Text("-")),
                   ),
                 ]),
-                DataRow(cells: [
+                const DataRow(cells: [
                   DataCell(
                     Text("CG1"),
                   ),
@@ -125,7 +125,7 @@ class _ListColectoresWidgetState extends State<ListColectoresWidget> {
                     FittedBox(child: Text("-")),
                   ),
                 ]),
-                DataRow(cells: [
+                const DataRow(cells: [
                   DataCell(
                     Text("CG1"),
                   ),
@@ -145,7 +145,7 @@ class _ListColectoresWidgetState extends State<ListColectoresWidget> {
                     FittedBox(child: Text("-")),
                   ),
                 ]),
-                DataRow(cells: [
+                const DataRow(cells: [
                   DataCell(
                     Text("CG1"),
                   ),
@@ -165,7 +165,7 @@ class _ListColectoresWidgetState extends State<ListColectoresWidget> {
                     FittedBox(child: Text("-")),
                   ),
                 ]),
-                DataRow(cells: [
+                const DataRow(cells: [
                   DataCell(
                     Text("CG1"),
                   ),

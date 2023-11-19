@@ -4,7 +4,7 @@ class Displayer extends StatelessWidget {
   final String primaryText;
   final String secondaryText;
 
-  Displayer({required this.primaryText, required this.secondaryText});
+  const Displayer({super.key, required this.primaryText, required this.secondaryText});
 
   @override
   Widget build(BuildContext context) {
@@ -30,7 +30,7 @@ class Displayer extends StatelessWidget {
           Text(
             secondaryText,
             overflow: TextOverflow.ellipsis,
-            style: TextStyle(color: Colors.grey, fontSize: 18),
+            style: const TextStyle(color: Colors.grey, fontSize: 18),
           ),
         ],
       ),

@@ -40,7 +40,7 @@ class PlayerFootCollectorProvider {
         var response = PlayerFootCollector.fromJson(
             {"footCollectors": body}.map((key, value) => MapEntry(key, value)));
 
-        print("Lista footCollectors: ${response}");
+        print("Lista footCollectors: $response");
         return {"success": response};
       } else {
         return jsonDecode(resp.body) as Map<String, dynamic>;

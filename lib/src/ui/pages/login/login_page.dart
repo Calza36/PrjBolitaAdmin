@@ -85,8 +85,8 @@ class _LoginPageState extends State<LoginPage> {
         ),
         Container(
           padding: const EdgeInsets.only(top: 50.0),
-          child: Column(
-            children: const <Widget>[
+          child: const Column(
+            children: <Widget>[
               Icon(
                 Icons.attractions_sharp,
                 color: Colors.white,

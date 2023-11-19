@@ -28,8 +28,7 @@ class EditPlayerPage extends StatefulWidget {
   final int fromTab;
   final dynamic typePlayer;
 
-  const EditPlayerPage({Key? key, required this.fromTab, this.typePlayer})
-      : super(key: key);
+  const EditPlayerPage({super.key, required this.fromTab, this.typePlayer});
 
   @override
   EditPlayerPageState createState() => EditPlayerPageState();
@@ -40,7 +39,7 @@ int defaultTabIndexToBack = 0;
 
 class EditPlayerPageState extends State<EditPlayerPage>
     with SingleTickerProviderStateMixin<EditPlayerPage> {
-  TypeOfUser? _type = TypeOfUser.unselected;
+  final TypeOfUser _type = TypeOfUser.unselected;
 
   bool _checkManageRulesPermit = false;
   bool _checkAssingRulePermit = false;
@@ -57,7 +56,7 @@ class EditPlayerPageState extends State<EditPlayerPage>
   List<String> listRuler = <String>[];
   List<String> listIdRuler = <String>[];
 
-  bool _typeFlatValid = true;
+  final bool _typeFlatValid = true;
   String? selectedRule;
   String? selectedRuleId;
 
@@ -234,8 +233,8 @@ class EditPlayerPageState extends State<EditPlayerPage>
               elevation: 3,
               shadowColor: Colors.redAccent,
               child: Column(children: [
-                Row(
-                  children: const [
+                const Row(
+                  children: [
                     SizedBox(
                       width: 22,
                     ),
@@ -255,8 +254,8 @@ class EditPlayerPageState extends State<EditPlayerPage>
                     ),
                   ],
                 ),
-                Row(
-                  children: const [
+                const Row(
+                  children: [
                     SizedBox(
                       width: 25,
                     ),
@@ -327,8 +326,8 @@ class EditPlayerPageState extends State<EditPlayerPage>
                 const SizedBox(
                   height: 10,
                 ),
-                Row(
-                  children: const [
+                const Row(
+                  children: [
                     SizedBox(
                       width: 25,
                     ),
@@ -391,8 +390,8 @@ class EditPlayerPageState extends State<EditPlayerPage>
                         ),
                       );
                     },
-                    child: Row(
-                      children: const [
+                    child: const Row(
+                      children: [
                         SizedBox(
                           width: 22,
                         ),
@@ -480,8 +479,8 @@ class EditPlayerPageState extends State<EditPlayerPage>
       builder: (context, getPlayersState) {
         if (getPlayersState is GetRulesInitial ||
             getPlayersState is GetRulesLoading) {
-          return Row(
-            children: const [
+          return const Row(
+            children: [
               SizedBox(
                   height: 20, width: 20, child: CircularProgressIndicator()),
               SizedBox(
@@ -1026,15 +1025,15 @@ class EditPlayerPageState extends State<EditPlayerPage>
             elevation: 3,
             shadowColor: Colors.redAccent,
             child: Column(children: [
-              Row(
+              const Row(
                 children: [
-                  const SizedBox(
+                  SizedBox(
                     width: 22,
                   ),
                   Expanded(
                       child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
-                    children: const [
+                    children: [
                       SizedBox(
                         child: Text(
                           "Permisos",
@@ -1047,7 +1046,7 @@ class EditPlayerPageState extends State<EditPlayerPage>
                       ),
                     ],
                   )),
-                  const SizedBox(
+                  SizedBox(
                     width: 22,
                     height: 22,
                   ),
@@ -1196,15 +1195,15 @@ class EditPlayerPageState extends State<EditPlayerPage>
             elevation: 3,
             shadowColor: Colors.redAccent,
             child: Column(children: [
-              Row(
+              const Row(
                 children: [
-                  const SizedBox(
+                  SizedBox(
                     width: 22,
                   ),
                   Expanded(
                       child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
-                    children: const [
+                    children: [
                       SizedBox(
                         child: Text(
                           "Permisos",
@@ -1217,7 +1216,7 @@ class EditPlayerPageState extends State<EditPlayerPage>
                       ),
                     ],
                   )),
-                  const SizedBox(
+                  SizedBox(
                     width: 22,
                     height: 22,
                   ),
@@ -1377,16 +1376,16 @@ class EditPlayerPageState extends State<EditPlayerPage>
             elevation: 3,
             shadowColor: Colors.redAccent,
             child: Column(children: [
-              Row(
+              const Row(
                 children: [
-                  const SizedBox(
+                  SizedBox(
                     width: 22,
                   ),
                   Expanded(
                       child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      const SizedBox(
+                      SizedBox(
                         child: Text(
                           "Permisos",
                           style: TextStyle(
@@ -1398,7 +1397,7 @@ class EditPlayerPageState extends State<EditPlayerPage>
                       ),
                     ],
                   )),
-                  const SizedBox(
+                  SizedBox(
                     width: 22,
                     height: 22,
                   ),
@@ -1513,8 +1512,8 @@ class EditPlayerPageState extends State<EditPlayerPage>
               const SizedBox(
                 height: 10,
               ),
-              Row(
-                children: const [
+              const Row(
+                children: [
                   SizedBox(
                     width: 22,
                   ),

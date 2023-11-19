@@ -9,8 +9,8 @@ import '../../pages.dart';
 
 class FormAddLimitesWidget extends StatefulWidget {
   const FormAddLimitesWidget({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   State<FormAddLimitesWidget> createState() => _FormAddLimitesWidgetState();
@@ -63,11 +63,11 @@ class _FormAddLimitesWidgetState extends State<FormAddLimitesWidget> {
             children: [
               const SizedBox(height: 10.0),
               Padding(
-                padding: EdgeInsets.all(10),
+                padding: const EdgeInsets.all(10),
                 child: Column(children: [
-                  Row(
+                  const Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: const <Widget>[
+                    children: <Widget>[
                       Text(
                         "Seleccionar fecha y jornada",
                         style: TextStyle(
@@ -124,11 +124,11 @@ class _FormAddLimitesWidgetState extends State<FormAddLimitesWidget> {
             children: [
               const SizedBox(height: 10.0),
               Padding(
-                padding: EdgeInsets.all(10),
+                padding: const EdgeInsets.all(10),
                 child: Column(children: [
-                  Row(
+                  const Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: const <Widget>[
+                    children: <Widget>[
                       Text(
                         "Adicionar limitados:",
                         style: TextStyle(
@@ -171,15 +171,15 @@ class _FormAddLimitesWidgetState extends State<FormAddLimitesWidget> {
                     borderRadius: BorderRadius.circular(20.0)),
                 child: Column(
                   children: [
-                    Padding(
-                      padding: const EdgeInsets.all(10),
-                      child: Column(children: const [
+                    const Padding(
+                      padding: EdgeInsets.all(10),
+                      child: Column(children: [
                         SizedBox(height: 4),
                       ]),
                     ),
-                    Row(
+                    const Row(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children: const [
+                      children: [
                         Text(
                           "Vista previa:",
                           style: TextStyle(
@@ -214,7 +214,7 @@ class _FormAddLimitesWidgetState extends State<FormAddLimitesWidget> {
                         ],
                       ),
                     ),
-                    SizedBox(height: 5),
+                    const SizedBox(height: 5),
                     SingleChildScrollView(
                       scrollDirection: Axis.horizontal,
                       child: Row(
@@ -273,15 +273,15 @@ class _FormAddLimitesWidgetState extends State<FormAddLimitesWidget> {
                     borderRadius: BorderRadius.circular(20.0)),
                 child: Column(
                   children: [
-                    Padding(
-                      padding: const EdgeInsets.all(10),
-                      child: Column(children: const [
+                    const Padding(
+                      padding: EdgeInsets.all(10),
+                      child: Column(children: [
                         SizedBox(height: 4),
                       ]),
                     ),
-                    Row(
+                    const Row(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children: const [
+                      children: [
                         Text(
                           "Vista previa:",
                           style: TextStyle(
@@ -587,7 +587,7 @@ class _FormAddLimitesWidgetState extends State<FormAddLimitesWidget> {
             onPressed: () {
               showAlertGuardar(context);
             },
-            child: Text("Eliminar"),
+            child: const Text("Eliminar"),
           ),
         ),
       ),
@@ -883,7 +883,7 @@ class _FormAddLimitesWidgetState extends State<FormAddLimitesWidget> {
               "Se está guardando...",
               style: TextStyle(fontWeight: FontWeight.w500),
             ),
-            actions: <Widget>[],
+            actions: const <Widget>[],
           );
         });
   }

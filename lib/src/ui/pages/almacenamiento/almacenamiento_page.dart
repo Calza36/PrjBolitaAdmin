@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class Almacenamiento extends StatefulWidget {
-  const Almacenamiento({Key? key}) : super(key: key);
+  const Almacenamiento({super.key});
 
   @override
   State<Almacenamiento> createState() => _AlmacenamientoState();

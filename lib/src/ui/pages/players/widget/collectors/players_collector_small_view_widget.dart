@@ -15,8 +15,7 @@ import '../../page/edit_player/edit_player_page.dart';
 //class PlayerCollectorSmallView extends StatelessWidget {
 
 class PlayerCollectorSmallView extends StatefulWidget {
-  const PlayerCollectorSmallView({Key? key, required this.player})
-      : super(key: key);
+  const PlayerCollectorSmallView({super.key, required this.player});
   final PlayerCollectorEntity player;
   @override
   State<PlayerCollectorSmallView> createState() =>

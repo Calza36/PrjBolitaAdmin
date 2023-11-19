@@ -11,8 +11,8 @@ import '../../login/loadin_screen.dart';
 
 class NextLimitsViewWidget extends StatefulWidget {
   const NextLimitsViewWidget({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   State<NextLimitsViewWidget> createState() => _NextLimitsViewWidgetState();
@@ -1223,8 +1223,8 @@ class _NextLimitsViewWidgetState extends State<NextLimitsViewWidget> {
                     elevation: 10.0,
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20.0)),
-                    child: Column(
-                      children: const <Widget>[
+                    child: const Column(
+                      children: <Widget>[
                         SizedBox(height: 5),
                         Text(
                           "Fijos y Corridos limitados",
@@ -1277,8 +1277,8 @@ class _NextLimitsViewWidgetState extends State<NextLimitsViewWidget> {
                   elevation: 10.0,
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(20.0)),
-                  child: Column(
-                    children: const <Widget>[
+                  child: const Column(
+                    children: <Widget>[
                       SizedBox(height: 5),
                       Text(
                         "Parle limitados",

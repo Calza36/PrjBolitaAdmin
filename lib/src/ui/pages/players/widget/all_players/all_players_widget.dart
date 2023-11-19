@@ -15,7 +15,7 @@ import '../../page/edit_player/edit_player_page.dart';
 import 'list_all_players_widget.dart';
 
 class AllPlayersWidget extends StatefulWidget {
-  const AllPlayersWidget({Key? key}) : super(key: key);
+  const AllPlayersWidget({super.key});
 
   @override
   State<AllPlayersWidget> createState() => _AllPlayersWidgetState();

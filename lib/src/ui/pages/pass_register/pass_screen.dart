@@ -8,7 +8,7 @@ import 'package:untitled/src/data/services/get_it_mock.dart';
 import 'package:untitled/src/ui/pages/home/home_page.dart';
 
 class PassScreen extends StatefulWidget {
-  const PassScreen({Key? key}) : super(key: key);
+  const PassScreen({super.key});
 
   @override
   State<StatefulWidget> createState() => _PassScreen();

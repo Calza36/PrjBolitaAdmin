@@ -14,13 +14,12 @@ class AddPlayerPageStage extends StatefulWidget {
   final List<PlayerAbstractEntity> players;
 
   const AddPlayerPageStage(
-      {Key? key,
+      {super.key,
       required this.editMode,
       required this.addPlayerType,
       this.editPlayerType,
       this.player,
-      required this.players})
-      : super(key: key);
+      required this.players});
 
   @override
   AddPlayerPageState createState() => AddPlayerPageState();
@@ -40,8 +39,6 @@ class AddPlayerPageState extends State<AddPlayerPageStage>
   final _passwordController = TextEditingController();
   final _formKey = GlobalKey<FormState>();
 
-  @override
-  BuildContext get context => super.context;
 
   bool isAdmin() {
     String typeOfUser = GetItMock.typeOfUser();
@@ -546,7 +543,7 @@ class AddPlayerPageState extends State<AddPlayerPageStage>
               "Se está guardando...",
               style: TextStyle(fontWeight: FontWeight.w500),
             ),
-            actions: <Widget>[],
+            actions: const <Widget>[],
           );
         });
   }

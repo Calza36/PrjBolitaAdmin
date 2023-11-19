@@ -4,7 +4,7 @@ import '../../pages.dart';
 import '../widget/form_add_limites_widget.dart';
 
 class AddLimites extends StatelessWidget {
-  const AddLimites({Key? key}) : super(key: key);
+  const AddLimites({super.key});
 
   @override
   Widget build(BuildContext context) {

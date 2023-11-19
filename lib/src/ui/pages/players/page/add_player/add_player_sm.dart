@@ -17,13 +17,12 @@ class AddPlayerPage extends StatefulWidget {
   final int fromTabIndex;
 
   const AddPlayerPage(
-      {Key? key,
+      {super.key,
       required this.editMode,
       required this.addPlayerType,
       this.editPlayerType,
       this.player,
-      required this.fromTabIndex})
-      : super(key: key);
+      required this.fromTabIndex});
 
   @override
   AddPlayerPageState createState() => AddPlayerPageState();
@@ -380,8 +379,8 @@ class AddPlayerPageState extends State<AddPlayerPage>
       builder: (context, getPlayersState) {
         if (getPlayersState is GetPlayersInitial ||
             getPlayersState is GetPlayersLoading) {
-          return Row(
-            children: const [
+          return const Row(
+            children: [
               SizedBox(
                   height: 20, width: 20, child: CircularProgressIndicator()),
               SizedBox(
@@ -542,7 +541,7 @@ class AddPlayerPageState extends State<AddPlayerPage>
               "Se está guardando...",
               style: TextStyle(fontWeight: FontWeight.w500),
             ),
-            actions: <Widget>[],
+            actions: const <Widget>[],
           );
         });
   }

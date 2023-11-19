@@ -13,8 +13,7 @@ import '../../index.dart';
 import '../../page/edit_player/edit_player_page.dart';
 
 class PlayerFootCollectorSmallView extends StatefulWidget {
-  const PlayerFootCollectorSmallView({Key? key, required this.player})
-      : super(key: key);
+  const PlayerFootCollectorSmallView({super.key, required this.player});
   final PlayerFootCollectorEntity player;
 
   @override
@@ -48,7 +47,7 @@ class _PlayerFootCollectorSmallViewState
               subtitle: Text(
                 'Regla: ${player.rule.name!}',
               ),
-              trailing: GetItMock.manageFootCollectorsPermit()!
+              trailing: GetItMock.manageFootCollectorsPermit()
                   ? SizedBox(
                       width: 80,
                       child: Row(

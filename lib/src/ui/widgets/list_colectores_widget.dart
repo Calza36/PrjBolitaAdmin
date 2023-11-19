@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ListColectoresWidget extends StatefulWidget {
-  const ListColectoresWidget({Key? key}) : super(key: key);
+  const ListColectoresWidget({super.key});
 
   @override
   State<ListColectoresWidget> createState() => _ListColectoresWidgetState();
@@ -74,15 +74,15 @@ class _ListColectoresWidgetState extends State<ListColectoresWidget> {
                   ),
                 ),
               ],
-              rows: [
+              rows: const [
                 DataRow(cells: [
-                  const DataCell(
+                  DataCell(
                     Text("CG1"),
                   ),
                   DataCell(
                     FittedBox(child: Text("222")),
                   ),
-                  const DataCell(
+                  DataCell(
                     FittedBox(child: Text("180.00")),
                   ),
                   DataCell(

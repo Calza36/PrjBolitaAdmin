@@ -9,7 +9,7 @@ import 'package:untitled/src/ui/pages/home/home_page.dart';
 import 'package:untitled/src/ui/pages/pass_register/pass_screen.dart';
 
 class PassScreenRegister extends StatefulWidget {
-  const PassScreenRegister({Key? key}) : super(key: key);
+  const PassScreenRegister({super.key});
 
   @override
   State<StatefulWidget> createState() => _PassScreenRegister();

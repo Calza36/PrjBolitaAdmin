@@ -5,7 +5,7 @@ import 'keyboard_button.dart';
 
 class Keyboard extends StatelessWidget {
   final Function passToButton;
-  Keyboard(this.passToButton);
+  const Keyboard(this.passToButton, {super.key});
 
   Widget rowButton(List<String> buttons) {
     return Expanded(
@@ -21,8 +21,8 @@ class Keyboard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(16),
-      decoration: BoxDecoration(
+      padding: const EdgeInsets.all(16),
+      decoration: const BoxDecoration(
         color: Color(0xFF292D36),
         borderRadius: BorderRadius.vertical(
           top: Radius.circular(32),

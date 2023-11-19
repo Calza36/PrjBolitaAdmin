@@ -8,7 +8,7 @@ import '../../../infrastructure/shoot/providers/payload/shoot_payload.dart';
 import '../../../tools/app_config_size.dart';
 
 class TiradaManager extends StatefulWidget {
-  const TiradaManager({Key? key}) : super(key: key);
+  const TiradaManager({super.key});
 
   @override
   State<TiradaManager> createState() => _TiradaManagerState();
@@ -214,9 +214,9 @@ class _TiradaManagerState extends State<TiradaManager> {
   }
 
   pick5() {
-    return Column(
+    return const Column(
       children: [
-        const Text(
+        Text(
           "Pick 5",
           style: TextStyle(
             fontWeight: FontWeight.bold,
@@ -224,7 +224,7 @@ class _TiradaManagerState extends State<TiradaManager> {
         ),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: const [
+          children: [
             // circularTextInput(tec51, '51'),
             // circularTextInput(tec52, '52'),
             // circularTextInput(tec53, '53'),

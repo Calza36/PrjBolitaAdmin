@@ -16,7 +16,7 @@ class _CentenaState extends State<Centena> {
   String apuesta = "";
   bool selecC = true;
   bool selecA = false;
-  bool _flagGuardOverflow = true;
+  final bool _flagGuardOverflow = true;
 
   get textMessagesStyle => const TextStyle(fontSize: 18);
 

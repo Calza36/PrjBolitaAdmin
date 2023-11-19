@@ -13,7 +13,7 @@ import '../index.dart';
 import '../page/edit_player/edit_player_page.dart';
 
 class ManagePanelWidget extends StatefulWidget {
-  const ManagePanelWidget({Key? key, required this.player}) : super(key: key);
+  const ManagePanelWidget({super.key, required this.player});
 
   final PlayerAbstractEntity player;
 

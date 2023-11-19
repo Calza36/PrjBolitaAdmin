@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../widget/current_limits_view_widget.dart';
 
 class CurrentLimits extends StatefulWidget {
-  const CurrentLimits({Key? key}) : super(key: key);
+  const CurrentLimits({super.key});
 
   @override
   State<CurrentLimits> createState() => _CurrentLimitsState();

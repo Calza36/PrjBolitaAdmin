@@ -178,7 +178,8 @@ class _ChangePassPageState extends State<ChangePassPage> {
   }
 
   Widget _crearBoton() {
-    return StreamBuilder(
+    return FutureBuilder(
+    future: Future.value(),
       builder: (BuildContext context, AsyncSnapshot snapshot) {
         return ElevatedButton(
             onPressed: _habitarBtn()

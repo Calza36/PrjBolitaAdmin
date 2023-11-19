@@ -13,7 +13,7 @@ import '../../page/add_player/add_player_sm.dart';
 import 'list_players_foot_collectors.dart';
 
 class PlayersFootCollectorsWidget extends StatefulWidget {
-  const PlayersFootCollectorsWidget({Key? key}) : super(key: key);
+  const PlayersFootCollectorsWidget({super.key});
 
   @override
   State<PlayersFootCollectorsWidget> createState() =>

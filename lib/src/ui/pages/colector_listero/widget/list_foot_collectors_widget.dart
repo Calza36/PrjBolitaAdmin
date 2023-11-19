@@ -10,13 +10,12 @@ import '../../list/page/list_page.dart';
 
 class ListFootCollectorsWidget extends StatefulWidget {
   const ListFootCollectorsWidget(
-      {Key? key,
+      {super.key,
       required this.collectorId,
       required this.turn,
       required this.day,
       required this.month,
-      required this.year})
-      : super(key: key);
+      required this.year});
   final String collectorId;
   final String turn;
   final int day;

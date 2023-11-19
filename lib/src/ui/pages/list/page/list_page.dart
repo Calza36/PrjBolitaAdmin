@@ -82,8 +82,8 @@ class _ListPageState extends State<ListPage> {
     AppConfigSize().init(context);
     return Scaffold(
       appBar: AppBar(
-        title: Row(
-          children: const [
+        title: const Row(
+          children: [
             /*IconButton(
                 onPressed: () {
                   Navigator.pop(context);
@@ -355,10 +355,10 @@ class _ListPageState extends State<ListPage> {
                       ],
                     );
                   } else {
-                    return SizedBox(
+                    return const SizedBox(
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
-                        children: const <Widget>[
+                        children: <Widget>[
                           SizedBox(child: Text("-\t\t-")),
                         ],
                       ),

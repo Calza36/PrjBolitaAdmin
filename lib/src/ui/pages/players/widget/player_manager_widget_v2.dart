@@ -22,13 +22,13 @@ class PlayerManageWidget extends StatelessWidget {
   int defaultTabIndex;
   @override
   Widget build(BuildContext context) {
-    final _kTabPages = <Widget>[
+    final kTabPages = <Widget>[
       const PlayersAll(),
       const PlayersGeneralCollectors(),
       const PlayersCollectors(),
       const PlayersFootCollectors(),
     ];
-    final _kTabs = <Tab>[
+    final kTabs = <Tab>[
       const Tab(text: 'Todos'),
       const Tab(text: 'C. General'),
       const Tab(text: 'Colector'),
@@ -50,7 +50,7 @@ class PlayerManageWidget extends StatelessWidget {
 
     return DefaultTabController(
       initialIndex: defaultTabIndex,
-      length: _kTabs.length,
+      length: kTabs.length,
       child: Scaffold(
         appBar: AppBar(
           title: const Text('Jugadores'),
@@ -78,11 +78,11 @@ class PlayerManageWidget extends StatelessWidget {
             //     icon: const Icon(Icons.add_reaction_outlined))
           ],
           bottom: TabBar(
-            tabs: _kTabs,
+            tabs: kTabs,
           ),
         ),
         body: TabBarView(
-          children: _kTabPages,
+          children: kTabPages,
         ),
       ),
     );

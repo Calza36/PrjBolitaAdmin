@@ -13,7 +13,7 @@ import '../../widget/collectors/players_collectors_widget.dart';
 import '../add_player/add_player_sm.dart';
 
 class PlayersCollectors extends StatelessWidget {
-  const PlayersCollectors({Key? key}) : super(key: key);
+  const PlayersCollectors({super.key});
   bool canAddForPermit() {
     return GetItMock.manageCollectorsPermit() && canAddForParent();
   }

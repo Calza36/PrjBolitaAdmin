@@ -7,7 +7,7 @@ import '../../../../../infrastructure/player_foot_collector/datasources/implemen
 import '../../../../widgets/plane_loading_widget.dart';
 
 class ListPlayersFootCollectors extends StatefulWidget {
-  const ListPlayersFootCollectors({Key? key}) : super(key: key);
+  const ListPlayersFootCollectors({super.key});
 
   @override
   State<ListPlayersFootCollectors> createState() =>

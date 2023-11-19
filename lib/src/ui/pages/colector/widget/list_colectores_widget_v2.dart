@@ -10,13 +10,12 @@ import '../../../widgets/plane_loading_widget.dart';
 
 class ListColectoresWidgetV2 extends StatefulWidget {
   const ListColectoresWidgetV2(
-      {Key? key,
+      {super.key,
       required this.generalCollectorId,
       required this.turn,
       required this.day,
       required this.month,
-      required this.year})
-      : super(key: key);
+      required this.year});
   final String generalCollectorId;
   final String turn;
   final int day;

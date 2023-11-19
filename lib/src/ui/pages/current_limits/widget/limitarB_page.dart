@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class LimitarB extends StatelessWidget {
-  LimitarB(
+  const LimitarB(
       {super.key, required this.numberSizeDay, required this.numberListDay});
   final int numberSizeDay;
   final List numberListDay;

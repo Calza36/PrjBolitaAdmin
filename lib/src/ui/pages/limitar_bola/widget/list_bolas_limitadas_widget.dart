@@ -9,8 +9,8 @@ import '../page/edit_limites_page.dart';
 
 class ListBolasLimitadasWidget extends StatefulWidget {
   const ListBolasLimitadasWidget({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   State<ListBolasLimitadasWidget> createState() =>
@@ -272,7 +272,7 @@ class _ListBolasLimitadasWidgetState extends State<ListBolasLimitadasWidget> {
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
         content: Text("Error al intentar eliminar. ${error['message']}"),
-        duration: Duration(seconds: 2),
+        duration: const Duration(seconds: 2),
         backgroundColor: Colors.red,
       ),
     );

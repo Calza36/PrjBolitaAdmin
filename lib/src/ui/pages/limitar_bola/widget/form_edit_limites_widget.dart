@@ -10,9 +10,9 @@ import '../../pages.dart';
 
 class FormEditLimitesWidget extends StatefulWidget {
   const FormEditLimitesWidget({
-    Key? key,
+    super.key,
     required this.limitatedEntity,
-  }) : super(key: key);
+  });
   final LimitatedEntity limitatedEntity;
 
   @override
@@ -83,11 +83,11 @@ class _FormEditLimitesWidgetState extends State<FormEditLimitesWidget>
             children: [
               const SizedBox(height: 10.0),
               Padding(
-                padding: EdgeInsets.all(10),
+                padding: const EdgeInsets.all(10),
                 child: Column(children: [
-                  Row(
+                  const Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: const <Widget>[
+                    children: <Widget>[
                       Text(
                         "Fecha y jornada",
                         style: TextStyle(
@@ -147,11 +147,11 @@ class _FormEditLimitesWidgetState extends State<FormEditLimitesWidget>
             children: [
               const SizedBox(height: 10.0),
               Padding(
-                padding: EdgeInsets.all(10),
+                padding: const EdgeInsets.all(10),
                 child: Column(children: [
-                  Row(
+                  const Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: const <Widget>[
+                    children: <Widget>[
                       Text(
                         "Adicionar limitados:",
                         style: TextStyle(
@@ -192,15 +192,15 @@ class _FormEditLimitesWidgetState extends State<FormEditLimitesWidget>
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
           child: Column(
             children: [
-              Padding(
-                padding: const EdgeInsets.all(10),
-                child: Column(children: const [
+              const Padding(
+                padding: EdgeInsets.all(10),
+                child: Column(children: [
                   SizedBox(height: 4),
                 ]),
               ),
-              Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: const [
+                children: [
                   Text(
                     "Vista previa:",
                     style: TextStyle(
@@ -504,7 +504,7 @@ class _FormEditLimitesWidgetState extends State<FormEditLimitesWidget>
             onPressed: () {
               showAlertEditing(context);
             },
-            child: Text("Eliminar"),
+            child: const Text("Eliminar"),
           ),
         ),
       ),
@@ -573,7 +573,7 @@ class _FormEditLimitesWidgetState extends State<FormEditLimitesWidget>
               "Se está actualizado...",
               style: TextStyle(fontWeight: FontWeight.w500),
             ),
-            actions: <Widget>[],
+            actions: const <Widget>[],
           );
         });
   }
@@ -803,6 +803,5 @@ class _FormEditLimitesWidgetState extends State<FormEditLimitesWidget>
         ),
       ),
     );
-    ;
   }
 }

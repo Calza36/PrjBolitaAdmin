@@ -3,7 +3,6 @@
 //     final currentLimited = currentLimitedFromJson(jsonString);
 
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'dart:convert';
 
 part 'current_limited.freezed.dart';
 part 'current_limited.g.dart';

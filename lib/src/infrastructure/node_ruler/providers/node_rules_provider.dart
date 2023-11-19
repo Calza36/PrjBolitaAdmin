@@ -5,7 +5,6 @@ import 'package:http/http.dart' as http;
 import '../../../aplication/env/env.dart';
 import '../../../data/services/get_it_mock.dart';
 import '../dtos/index.dart';
-import '../dtos/payload/node_rule_payload.dart';
 
 class NodeRuleProvider {
   String? token = GetItMock.prefs.getString('access_token');

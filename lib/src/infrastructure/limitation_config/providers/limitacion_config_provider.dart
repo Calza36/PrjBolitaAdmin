@@ -10,7 +10,6 @@ import '../../../data/services/get_it_mock.dart';
 import '../../../domain/limitation_queue/entity/limitation_request.dart';
 import '../dtos/current_limited.dart';
 import '../dtos/limitated.dart';
-import '../dtos/limited.dart';
 import '../dtos/next_limited.dart';
 
 class LimitationConfigProvider {

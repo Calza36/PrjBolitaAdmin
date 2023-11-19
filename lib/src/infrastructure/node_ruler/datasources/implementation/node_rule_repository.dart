@@ -1,6 +1,5 @@
 import 'package:flutter/foundation.dart';
 
-import '../../dtos/payload/node_rule_payload.dart';
 import '../../index.dart';
 import '../base/node_rule_repository_base.dart';
 

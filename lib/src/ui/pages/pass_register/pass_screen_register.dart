@@ -26,6 +26,21 @@ class _PassScreenRegister extends State<PassScreenRegister> {
     super.dispose();
   }
 
+
+  // @override
+  // Widget build(BuildContext context) {
+  //   String? pin = GetItMock.prefs.getString("pin");
+  //   if (pin != null && pin != "" && pin != "null") {
+  //     Future.delayed(Duration.zero, () {
+  //       //Navigator.pushReplacementNamed(context, "pass");
+  //       Navigator.of(context).pushReplacement(
+  //         MaterialPageRoute(builder: (context) => const PassScreen()),
+  //       );
+  //     });
+  //     return const SizedBox();
+
+
+
   @override
   Widget build(BuildContext context) {
     if (GetItMock.prefs.getString("pin") != "" &&

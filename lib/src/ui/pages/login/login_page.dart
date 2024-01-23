@@ -372,59 +372,136 @@ class _LoginPageState extends State<LoginPage> {
       return false;
     }
   }
+  
+  //FAKE LOGIN PARA Testiar la Aplicacion
+  bool fakeLogin(String username, String password) {
+    // Define los nombres de usuario y contraseñas que permitirán el acceso
+    const validUsernames = ['user1', 'user2', 'user3'];
+    const validPasswords = ['pass1234', 'pass2345', 'pass3456'];
+
+    // Si el nombre de usuario y la contraseña proporcionados están en las listas de arriba, devuelve true
+    if (validUsernames.contains(username) && validPasswords.contains(password)) {
+      return true;
+    }
+
+    // Si no, devuelve false
+    return false;
+  }
 
   void _verificarUser(String user, String pass, context) async {
-    try {
-      //google.com
-      LoadingScreen.show(context, "Verificando usuario, por favor espere...");
-      final result = await InternetAddress.lookup('google.com');
-      if (result.isNotEmpty && result[0].rawAddress.isNotEmpty) {
-        //LoadingScreen.show(context, "Verificando usuario, por favor espere...");
-        try {
-          Map info = await usuarioProvider.login(user, pass);
-          if ((info['message'] != null) || info['ok'] != null) {
-            if (info['ok'] != null) {
-              if (info['ok'] as bool) {
-                pass = "";
-                user = "";
-                LoadingScreen.hide(context);
-                setLastLoginTime();
-                Navigator.pushReplacementNamed(context, "register");
-              } else {
-                setState(() {
-                  LoadingScreen.hide(context);
-                });
-                alert(context, "Verificar el nombre de usuario o contraseña");
-              }
-            } else if (info['message'] != null) {
-              setState(() {
-                LoadingScreen.hide(context);
-                alert(context, info['message']);
-              });
-            }
-          }
-        } catch (e) {
-          print("Error $e");
-          setState(() {
-            LoadingScreen.hide(context);
-            alert(context, "Algo salió mal.");
-          });
-        }
-      }
-    } catch (e) {
+  try {
+    LoadingScreen.show(context, "Verificando usuario, por favor espere...");
+    // Comenta las siguientes líneas para deshabilitar la verificación de conexión a Internet
+    //final result = await InternetAddress.lookup('google.com');
+    //if (result.isNotEmpty && result[0].rawAddress.isNotEmpty) {
+      // Comenta las siguientes líneas para deshabilitar la autenticación real
+      //try {
+        //Map info = await usuarioProvider.login(user, pass);
+        //if ((info['message'] != null) || info['ok'] != null) {
+          //if (info['ok'] != null) {
+            //if (info['ok'] as bool) {
+    bool isAuthenticated = fakeLogin(user, pass);
+    if (isAuthenticated) {
+      pass = "";
+      user = "";
+      LoadingScreen.hide(context);
+      setLastLoginTime();
+      Navigator.pushReplacementNamed(context, "register");
+    } else {
       setState(() {
         LoadingScreen.hide(context);
-        print('not connected');
-        ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content:
-                Text("Revise su conexión a internet. Intente nuevamente..."),
-            duration: Duration(seconds: 2),
-          ),
-        );
       });
+      alert(context, "Verificar el nombre de usuario o contraseña");
     }
+  } catch (e) {
+    print('Caught error: $e');
   }
+  // Comenta las siguientes líneas para deshabilitar el manejo de errores de la autenticación real
+  /*} else if (info['message'] != null) {
+    setState(() {
+      LoadingScreen.hide(context);
+      alert(context, info['message']);
+    });
+  }
+} catch (e) {
+  print("Error $e");
+  setState(() {
+    LoadingScreen.hide(context);
+    alert(context, "Algo salió mal.");
+  });
+}*/
+// Comenta las siguientes líneas para deshabilitar la verificación de conexión a Internet
+/*} catch (e) {
+  setState(() {
+    LoadingScreen.hide(context);
+    print('not connected');
+    ScaffoldMessenger.of(context).showSnackBar(
+      const SnackBar(
+        content:
+            Text("Revise su conexión a internet. Intente nuevamente..."),
+        duration: Duration(seconds: 2),
+      ),
+    );
+  });
+}*/
+}
+
+
+
+
+
+  // void _verificarUser(String user, String pass, context) async {
+  //   try {
+  //     //google.com
+  //     LoadingScreen.show(context, "Verificando usuario, por favor espere...");
+  //     final result = await InternetAddress.lookup('google.com');
+  //     if (result.isNotEmpty && result[0].rawAddress.isNotEmpty) {
+  //       //LoadingScreen.show(context, "Verificando usuario, por favor espere...");
+  //       try {
+  //         Map info = await usuarioProvider.login(user, pass);
+  //         if ((info['message'] != null) || info['ok'] != null) {
+  //           if (info['ok'] != null) {
+  //             if (info['ok'] as bool) {
+  //               pass = "";
+  //               user = "";
+  //               LoadingScreen.hide(context);
+  //               setLastLoginTime();
+  //               Navigator.pushReplacementNamed(context, "register");
+  //             } else {
+  //               setState(() {
+  //                 LoadingScreen.hide(context);
+  //               });
+  //               alert(context, "Verificar el nombre de usuario o contraseña");
+  //             }
+  //           } else if (info['message'] != null) {
+  //             setState(() {
+  //               LoadingScreen.hide(context);
+  //               alert(context, info['message']);
+  //             });
+  //           }
+  //         }
+  //       } catch (e) {
+  //         print("Error $e");
+  //         setState(() {
+  //           LoadingScreen.hide(context);
+  //           alert(context, "Algo salió mal.");
+  //         });
+  //       }
+  //     }
+  //   } catch (e) {
+  //     setState(() {
+  //       LoadingScreen.hide(context);
+  //       print('not connected');
+  //       ScaffoldMessenger.of(context).showSnackBar(
+  //         const SnackBar(
+  //           content:
+  //               Text("Revise su conexión a internet. Intente nuevamente..."),
+  //           duration: Duration(seconds: 2),
+  //         ),
+  //       );
+  //     });
+  //   }
+  // }
 
   void changePassword(
       String user, String oldPassword, String newPassword) async {
